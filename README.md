@@ -2,7 +2,7 @@
 
 The following is a setup guide for Kali Linux, using my config files that I've acquired / developed over the years.
 
-## Open VM Tools
+## Install Open VM Tools (if applicable)
 
 ```bash
 sudo apt update
