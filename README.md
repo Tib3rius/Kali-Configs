@@ -24,10 +24,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 cp .zshrc ~/
 ```
 
-## Install tmux and powerline.
+## Install tmux, powerline, and xclip.
 
 ```bash
-sudo apt install tmux powerline
+sudo apt install tmux powerline xclip
 ```
 
 ### Copy tmux config into ~/
