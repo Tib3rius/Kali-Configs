@@ -272,8 +272,8 @@ set-option -s set-clipboard off
 #bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -i"
 #bind -t vi-copy y copy-pipe "xclip"
 
-bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -i"
-
+bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -in -filter -selection primary | xclip -in -selection clipboard"
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -in -filter -selection primary | xclip -in -selection clipboard"
 
 #bind-key -T copy-mode-vi y send-keys -X copy-pipe "xclip -r" \; display-message "Copied to selection"
 #bind-key -T copy-mode-vi Y send-keys -X copy-pipe "xclip -r -selection clipboard" \; display-message "Copied to clipboard"
